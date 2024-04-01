@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Konversi Suhu</h1>
+      <div id="input-container">
+        <label for="suhu">Masukkan Suhu:</label>
+        <input
+          type="number"
+          id="suhu"
+          name="suhu"
+          placeholder="Masukkan nilai suhu"
+        />
+        <select id="satuan-awal" name="satuan-awal">
+          <option value="celsius">Celsius (°C)</option>
+          <option value="fahrenheit">Fahrenheit (°F)</option>
+          <option value="kelvin">Kelvin (K)</option>
+        </select>
+      </div>
+      <div id="output-container">
+        <p>Hasil Konversi:</p>
+        <span id="suhu-konversi"></span>
+        <select id="satuan-akhir" name="satuan-akhir">
+          <option value="celsius">Celsius (°C)</option>
+          <option value="fahrenheit">Fahrenheit (°F)</option>
+          <option value="kelvin">Kelvin (K)</option>
+        </select>
+      </div>
+      <button id="konversi-btn">Konversi</button>
+    </div>
+    <!-- Watermark -->
+    <div class="watermark">Analis.A</div>
+    <script src="script.js"></script>
+  </body>
+</html>
